@@ -13,7 +13,7 @@ Post.init(
             primaryKey: true,
             autoIncrement: true
         },
-        title: {
+        movietitle: {
             type: DataTypes.STRING,
             allowNull: false
         },
