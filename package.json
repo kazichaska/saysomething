@@ -1,0 +1,20 @@
+{
+  "name": "saysomething",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazichaska/saysomething.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazichaska/saysomething/issues"
+  },
+  "homepage": "https://github.com/kazichaska/saysomething#readme"
+}
