@@ -1,33 +1,19 @@
-<form class="login-form">
-  <div>
-    <label for="email-login">email:</label>
-    <input type="text" id="email-login" />
-  </div>
-  <div>
-    <label for="password-login">password:</label>
-    <input type="password" id="password-login" />
-  </div>
-  <div>
-    <button type="submit">login</button>
-  </div>
-</form>
+<form class="ui form login-form form-style">
 
-<form class="signup-form">
-  <div>
-    <label for="username-signup">username:</label>
-    <input type="text" id="username-signup" />
+   <div class="field">
+    <label>Email:</label>
+    <input type="text" id="email-login" name="email" >
   </div>
-  <div>
-    <label for="email-signup">email:</label>
-    <input type="text" id="email-signup" />
+  <div class="field">
+    <label>Password:</label>
+    <input type="password" id="password-login" name="password" >
   </div>
-  <div>
-    <label for="password-signup">password:</label>
-    <input type="text" id="password-signup" />
-  </div>
-  <div>
-    <button type="submit">signup</button>
-  </div>
+  <button class="ui button btn" type="submit">Sign in</button>
+    <div class="link">
+        <a href="/signup"  id="signup-link">Sign up instead</a>
+    </div>
 </form>
+ 
 
-<script src="../javascript/login.js"></script>
+
+<script src="/javascript/login.js"></script>

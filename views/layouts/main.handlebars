@@ -3,26 +3,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>SaySomething!</title>
+
+       <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+          integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+   />
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
 
   <body>
     <div class="wrapper">
       <header>
-        <h1>
-          <a href="/">SaySomething</a>
-        </h1>
-        <nav>
-          {{#if loggedIn}}
-            <a id="nav" href="/">home</a>
-            <a id="nav" href="/dashboard">dashboard</a>
-            <button id="logout" class="btn-no-style">logout</button>
-          {{else}}
-            <a id="nav" href="/">home</a>
-            <a href="/login">login</a>
-          {{/if}}
-        </nav>
+            <div class="left">
+                <a href="/"><i class=" circular inverted teal blue large  comments outline icon"></i>Say Something</a>
+            </div>
+    
+            <nav>
+            {{#if loggedIn}}
+                <a class="nav" href="/">Home</a>
+                <a class="nav" href="/dashboard">Dashboard</a>
+                <a id="logout" href="/" class="btn-no-style">Logout</a>
+            {{else}}
+                <a class="nav" href="/">Home</a>
+                <a class="nav" href="/login">Login</a>
+            {{/if}}
+            </nav>
       </header>
       <main>
         {{{body}}}
@@ -34,5 +43,14 @@
     {{#if loggedIn}}
       <script src="/javascript/logout.js"></script>
     {{/if}}
+
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+              integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+              crossorigin="anonymous"
+              referrerpolicy="no-referrer">
+              
+        </script>
   </body>
 </html>
