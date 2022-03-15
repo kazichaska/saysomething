@@ -16,7 +16,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: lightblue;
+    /* background-color: lightblue;*/
+
+    background-color: #2185D0;
     padding: 25px;
     font-size: 20px;
 }
