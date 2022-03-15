@@ -19,13 +19,15 @@ header {
     background-color: lightblue;
     padding: 25px;
     font-size: 20px;
-
+}
+#header-title{
+    color: white;
+    font-weight: bold;
 }
 
 #icon {
     margin-left: 20px;
     cursor: pointer;
-    
 }
 
 
@@ -33,6 +35,15 @@ header {
 nav a{
     color: white;
     margin-left: 10px;
+}
+
+
+
+nav a:hover{
+    color: lightblue; 
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px;
 }
 /* END navigation styling */
 
@@ -53,7 +64,7 @@ footer {
 .form-style {
 
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295), 0 8px 16px rgb(0 0 0 / 10%);
     margin: 50px 360px 0 360px;
     padding: 20px;
 }
@@ -65,22 +76,48 @@ footer {
 .link{
     margin-top: 10px;
 }
+
+
 /* END footer styling */
 
 
 /* START dashboard styling */
 
 .new-post-form{
-    margin: 50px;
+    margin: 30px 40px 30px 40px;
 }
 
-section{
-    margin: 10px 0 0 25px;
+#greeting-section{
+    margin: 10px 25px 0 25px;
 }
 
-
+#post-section{
+    margin: 10px 50px 40px 50px;
+}
 
 /* END dashboard styling */
+
+
+/* START posts styling */
+
+
+
+section ol li{
+    margin: 10px 30px 10px 30px;
+   
+}
+
+/* END posts styling */
+
+
+
+/* START  home page styling */
+
+.post-list li{
+    margin: 20px 20px 10px 70px;
+}
+
+/* END  home page styling */
 
 
 /* START media queries styling */
