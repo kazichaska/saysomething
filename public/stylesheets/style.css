@@ -105,14 +105,10 @@ footer {
 
 
 /* START posts styling */
-
-
-
 section ol li{
     margin: 10px 30px 10px 30px;
    
 }
-
 /* END posts styling */
 
 
@@ -124,6 +120,66 @@ section ol li{
 }
 
 /* END  home page styling */
+
+
+/* START  comment page styling */
+
+article h2 {
+    margin-left: 20px;
+}
+
+#post-info{
+    margin: 10px 0 10px 0;
+}
+
+.edit-post-form{
+    margin: 0 20px 10px 20px;
+
+}
+
+.comment-section{
+    margin: 30px 100px 180px 100px;
+ 
+}
+
+.comment-form{
+    margin: 20px 20px 10px 20px;
+}
+
+#comment-title{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#comment-body{
+    width: 100%;
+    resize: none;
+}
+
+#add-btn{
+    margin-top: 10px;
+}
+
+/* END  comment page styling */
+
+/* START  comment handlebar secton styling */
+
+
+.comment{
+    border: 1px solid blue;
+}
+
+
+/* END  comment section styling */
+
+
+
+
+
+
+
+
 
 
 /* START media queries styling */
