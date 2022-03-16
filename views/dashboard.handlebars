@@ -1,3 +1,5 @@
+
+
 <section id="greeting-section">
     <div class="ui center aligned top attached dividing header ">
         <h1>{{> greet }}</h1>
@@ -5,8 +7,6 @@
 
     </div>
 
-
-  
 
   <form class="new-post-form">
         <h2 class="ui  sub header">Create New Post</h2>
@@ -28,25 +28,33 @@
 {{#if posts.length}}
 <section id="post-section">
   
-         <h2>Your Posts</h2>
-  <ol>
-      <h3 class="ui block header">
+    <div class="dashboard-post-list">
+        <h2>Your Posts</h2>
+        <ol>
+            <h3 class="ui block header">
             {{#each posts as |post|}}
-        <li>
-        {{> post-info post}}
+            <li>
+                {{> post-info post}}
 
-        <a href="/dashboard/edit/{{post.id}}" class="edit-post-form">Edit post</a>
-        </li>
-        {{/each}}
+                <a href="/dashboard/edit/{{post.id}}" class="edit-post-form">Edit post</a>
+            </li>
+            {{/each}}
 
 
-      </h3>
-  
-  </ol>
-        
-  
- 
+        </h3>
+    
+    </ol>
+
+    </div>
+
 </section>
+
 {{/if}}
+
+
+
+
+
+</div>
 
 <script src="/javascript/add-post.js"></script>

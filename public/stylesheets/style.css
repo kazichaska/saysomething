@@ -16,10 +16,8 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: lightblue;*/
-
     background-color: #2185D0;
-    padding: 25px;
+    padding: 20px;
     font-size: 20px;
 }
 #header-title{
@@ -47,20 +45,21 @@ nav a:hover{
 
 /* START footer styling */
 footer {
-    position: absolute;
+
+  
     bottom: 0;
     width: 100%;
     height: 2.5rem;  
+    
     border-top: 1px solid rgb(204, 204, 204);
     display: flex;
     justify-content: center;
-    padding: 1%;
+    padding: 5px 0 5px 0;
     font-size: 110%;
+   
 }
 
-
 /* END footer styling */
-
 
 
 /* START form styling */
@@ -70,7 +69,6 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295), 0 8px 16px rgb(0 0 0 / 10%);
     margin: 50px 360px 0 360px;
     padding: 20px;
-    margin-bottom: 280px; 
 }
 
 .btn{
@@ -82,10 +80,11 @@ footer {
 }
 
 
-/* END footer styling */
+/* END form styling */
 
 
-/* START dashboard styling */
+
+/* START dashboard handlebar styling */
 
 .new-post-form{
     margin: 30px 250px 30px 250px;
@@ -96,14 +95,42 @@ footer {
 }
 
 #post-section{
-    margin: 10px 50px 40px 50px;
+    margin: 10px 50px 280px 50px;
+
+
 }
 
 .dashboard-form{
     margin-top: 30px;
 }
 
+
+
 /* END dashboard styling */
+
+
+/* START edit post handlebar*/
+
+.comment-section{
+   
+    margin: 0 100px 280px 100px ;
+}
+
+.comment-form{
+    margin: 0 20px 10px 20px;
+
+}
+
+
+
+
+.dashboard-post-list ol li a{
+ 
+  
+    margin: 0;
+}
+/* END edit post handlebar*/
+
 
 
 /* START posts styling */
@@ -111,6 +138,7 @@ section ol li{
     margin: 10px 30px 10px 30px;
    
 }
+
 /* END posts styling */
 
 
@@ -118,6 +146,7 @@ section ol li{
 /* START  home page styling */
 
 .post-list li{
+    
     margin: 20px 20px 10px 70px;
 }
 
@@ -160,8 +189,6 @@ article h2 {
 }
 
 /* END  comment page styling */
-
-
 
 
 
