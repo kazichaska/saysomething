@@ -1,4 +1,9 @@
-<ol class="post-list">
+
+
+<div class="comment-info-section">
+
+
+<ol class="comment-list">
   {{#each posts as |post|}}
   <li>
     {{> post-info post }}
@@ -6,20 +11,34 @@
   {{/each}}
 </ol>
 
-{{#if loggedIn}}
-  <form class="comment-form">
-    <div>
-      <textarea name="comment-body"></textarea>
-    </div>
 
-    <div>
-      <button type="submit">add comment</button>
-    </div>
-  </form>
-{{/if}}
+    
+    <div class="comment-info">
+        {{#if loggedIn}}
+        <form class="comment-form">
+            <div>
+                <textarea rows="3" name="comment-body"></textarea>
+            </div>
+            <div>
+                <button class="ui small primary button" type="submit">Add comment</button>
+            </div>
+        </form>
+        {{/if}}
+        {{> comments post.comments}}
+        {{#if loggedIn}}
+        <script src="/javascript/comment.js"></script>
+        {{/if}}
 
-{{> comments post.comments}}
 
-{{#if loggedIn}}
-  <script src="/javascript/comment.js"></script>
-{{/if}}
+
+    </div>    
+
+
+
+
+   
+
+
+
+
+</div>

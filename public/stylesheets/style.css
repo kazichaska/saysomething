@@ -1,188 +1,306 @@
-* {
-  box-sizing: border-box;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body,
-html {
-  height: 100%;
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: #333;
-  background-color: darkgray;
+body{
+    background-color: #f0f2f5a1;
 }
 
-a {
-  text-decoration: none;
-  color: #225ca3;
-  font-weight: bold;
-  transition: color 0.1s;
-}
 
-a:hover {
-  color: #3486eb;
-}
-
-button {
-  background-color: #225ca3;
-  border: 0;
-  padding: 1%;
-  color: white;
-  font-weight: bold;
-  transition: background-color 0.1s;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background-color: #3486eb;
-}
-
-.post-list {
-  margin: 0;
-  padding: 0;
-}
-
-textarea,
-input {
-  padding: 0.5%;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-textarea:focus,
-input:focus {
-  outline: none;
-  border: 1px solid orangered;
-}
-
-textarea {
-  min-width: 40%;
-  min-height: 100px;
-}
-
-form > div {
-  margin-bottom: 2%;
-}
-
-form label {
-  display: block;
-}
-
-.wrapper {
-  width: 100%;
-  min-height: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-}
-
+/* START navigation styling */
 header {
-  border-bottom: 1px solid #ccc;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2185D0;
+    padding: 20px;
+    font-size: 20px;
+}
+#header-title{
+    color: white;
+    font-weight: bold;
 }
 
-/* adding following to style `The Tech Blog` */
-header h1 {
-  font-size: 2em;
-  border: 1px solid black;
-  background-color: black;
-  box-shadow: 2px 2px 2px 2px rgb(0, 255, 115);
-  padding: 5px;
-  border-radius: 3px;
+#icon {
+    margin-left: 20px;
+    cursor: pointer;
 }
 
-/* putting some spaces between home, dashboard */
-#nav {
-  padding-left: 30px;
+nav a{
+    color: white;
+    margin-left: 10px;
 }
 
-main {
-  flex: 1;
-  padding: 2% 4%;
+nav a:hover{
+    color: #2185D0; 
+    background-color: white;
+    border-radius: 3px;
+    padding: 2px;
 }
+/* END navigation styling */
 
-.btn-no-style {
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: none;
-  color: #225ca3;
-  font-size: 100%;
-  font-weight: bold;
-  transition: color 0.1s;
-  margin-left: 16px;
-}
-
-.btn-no-style:hover {
-  background: none;
-  color: #3486eb;
-}
-
-.delete-post-btn {
-  background-color: #d41414;
-}
-
-.delete-post-btn:hover {
-  background-color: #ff643d;
-}
-
-/* box around each post */
-.post {
-  margin-bottom: 2%;
-  line-height: 150%;
-  border: 1px solid rgb(0, 255, 115);
-  margin: 5px;
-  padding: 5px;
-}
-
-.post .title span {
-  font-style: italic;
-  font-size: 90%;
-  color: #7d7d7d;
-}
-
-.edit-link {
-  display: block;
-  margin: -1.5% 0 2% 0;
-}
-
-.comment-form {
-  margin-bottom: 5%;
-}
-
-.comment {
-  padding: 1%;
-  margin-bottom: 1%;
-}
-
-.comment:nth-child(odd) {
-  background-color: #ebfff2;
-}
-
-.comment .meta {
-  font-size: 90%;
-  margin-bottom: 0.5%;
-  opacity: 0.6;
-}
-
-.new-post-form input {
-  width: 300px;
-}
-
-.edit-post-form {
-  margin-bottom: 5%;
-}
-
+/* START footer styling */
 footer {
-  border-top: 1px solid rgb(204, 204, 204);
-  display: flex;
-  justify-content: center;
-  padding: 1%;
-  font-size: 110%;
+
+  
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
+    
+    border-top: 1px solid rgb(204, 204, 204);
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 5px 0;
+    font-size: 110%;
+   
 }
+
+/* END footer styling */
+
+
+/* START form styling */
+.form-style {
+
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 50px 360px 280px 360px;
+    padding: 20px;
+}
+
+.btn{
+    width: 100%;
+}
+
+.link{
+    margin-top: 10px;
+}
+
+
+/* END form styling */
+
+
+
+/* START dashboard handlebar styling */
+
+.new-post-form{
+    margin: 30px 250px 30px 250px;
+}
+
+#greeting-section{
+    margin: 10px 25px 0 25px;
+}
+
+#post-section{
+    margin: 10px 50px 280px 50px;
+
+
+}
+
+.dashboard-form{
+    margin-top: 30px;
+}
+
+
+
+/* END dashboard styling */
+
+
+/* START edit post handlebar*/
+
+.comment-section{
+   
+    margin: 0 100px 280px 100px ;
+}
+
+.comment-form{
+    margin: 0 20px 10px 20px;
+
+}
+
+.comment-section-info{
+    margin-bottom: 380px;
+    
+}
+
+
+.dashboard-post-list ol li a{
+ 
+  
+    margin: 0;
+}
+/* END edit post handlebar*/
+
+
+
+/* START posts styling */
+section ol li{
+    margin: 10px 30px 10px 30px;
+   
+}
+
+/* END posts styling */
+
+
+
+/* START  home page styling */
+
+.post-list li{
+    
+    margin: 20px 20px 10px 70px;
+}
+
+.post-list{
+    margin-bottom: 280px;
+}
+
+/* END  home page styling */
+
+
+/* START  comment page styling */
+
+article h2 {
+    margin-left: 20px;
+}
+
+#post-info{
+    margin: 10px 0 10px 0;
+}
+
+.edit-post-form{
+    margin: 0 20px 10px 20px;
+
+}
+
+
+#comment-title{
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#comment-body{
+    width: 100%;
+    resize: none;
+}
+
+#add-btn{
+    margin-top: 10px;
+}
+
+/* END  comment page styling */
+
+
+
+
+/* START  single-post handlebar  styling */
+
+.comment-info-section{
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.comment-info{
+    /* border: 1px solid green; */
+    padding: 30px;
+    margin: 0 200px 0 200px;
+ 
+ }
+
+.comment-form textarea{
+  
+    width: 100%;
+    resize: none;
+    margin-bottom: 10px;
+   
+}
+
+
+
+
+
+/* END   single-post handlebar styling */
+
+
+
+
+
+
+
+
+/* START media queries styling */
+@media screen and (max-width: 992px) {
+    .form-style {
+
+      margin: 50px 200px 280px 200px;
+      
+    }
+
+    .new-post-form{
+        margin: 30px 180px 30px 180px;
+    }
+
+    .comment-info-section{
+
+    }
+
+    .comment-info{
+        
+        padding: 30px;
+        margin: 0 150px 0 150px;
+     
+    }
+
+  }
+
+
+@media screen and (max-width: 786px) {
+    .form-style {
+    
+      margin: 50px 100px 280px 100px;
+
+    }
+    .new-post-form{
+        margin: 30px 100px 30px 100px;
+    }
+
+
+
+    .comment-info{
+        
+        padding: 30px;
+        margin: 0 100px 0 100px;
+     
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .form-style{
+  
+    margin: 50px 50px 280px 100px;
+
+   }
+
+   .new-post-form{
+    margin: 30px 80px 30px 80px;
+   } 
+   
+   .comment-info{
+        
+    padding: 30px;
+    margin: 0 40px 0 40px;
+ 
+}
+
+}
+
+/* END media queries styling */
+
+
+
+
+
