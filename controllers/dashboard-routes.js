@@ -4,13 +4,12 @@ const sequelize = require('../config/connection');
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 const moment = require('moment');
-var today = moment().format("[Today is: ] dddd");
+var today = moment().format("[Today is: ] dddd, MM/DD/YYYY");
 
 function getGreeting(username) {
     const hour = new Date().getHours();
     return greet(username, hour);
 }
-
 
 router.get('/', withAuth, (req, res) => {
     Post.findAll({

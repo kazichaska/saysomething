@@ -32,14 +32,10 @@ header {
     cursor: pointer;
 }
 
-
-
 nav a{
     color: white;
     margin-left: 10px;
 }
-
-
 
 nav a:hover{
     color: #2185D0; 
@@ -51,13 +47,18 @@ nav a:hover{
 
 /* START footer styling */
 footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;  
     border-top: 1px solid rgb(204, 204, 204);
     display: flex;
     justify-content: center;
     padding: 1%;
     font-size: 110%;
-   
 }
+
+
 /* END footer styling */
 
 
@@ -69,6 +70,7 @@ footer {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295), 0 8px 16px rgb(0 0 0 / 10%);
     margin: 50px 360px 0 360px;
     padding: 20px;
+    margin-bottom: 280px; 
 }
 
 .btn{
@@ -119,6 +121,10 @@ section ol li{
     margin: 20px 20px 10px 70px;
 }
 
+.post-list{
+    margin-bottom: 280px;
+}
+
 /* END  home page styling */
 
 
@@ -137,14 +143,6 @@ article h2 {
 
 }
 
-.comment-section{
-    margin: 30px 100px 180px 100px;
- 
-}
-
-.comment-form{
-    margin: 20px 20px 10px 20px;
-}
 
 #comment-title{
     padding: 10px;
@@ -163,17 +161,39 @@ article h2 {
 
 /* END  comment page styling */
 
-/* START  comment handlebar secton styling */
 
 
-.comment{
-    border: 1px solid blue;
+
+
+
+/* START  single-post handlebar  styling */
+
+.comment-info-section{
+    /* border: 1px solid red; */
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.comment-info{
+    /* border: 1px solid green; */
+    padding: 30px;
+    margin: 0 200px 0 200px;
+ 
+ }
+
+.comment-form textarea{
+  
+    width: 100%;
+    resize: none;
+    margin-bottom: 10px;
+   
 }
 
 
-/* END  comment section styling */
 
 
+
+/* END   single-post handlebar styling */
 
 
 
@@ -186,11 +206,23 @@ article h2 {
 @media screen and (max-width: 992px) {
     .form-style {
 
-      margin: 50px 200px 20px 200px;
+      margin: 50px 200px 280px 200px;
+      
     }
 
     .new-post-form{
         margin: 30px 180px 30px 180px;
+    }
+
+    .comment-info-section{
+
+    }
+
+    .comment-info{
+        
+        padding: 30px;
+        margin: 0 150px 0 150px;
+     
     }
 
   }
@@ -199,22 +231,39 @@ article h2 {
 @media screen and (max-width: 786px) {
     .form-style {
     
-      margin: 50px 100px 20px 100px;
+      margin: 50px 100px 280px 100px;
+
     }
     .new-post-form{
         margin: 30px 100px 30px 100px;
+    }
+
+
+
+    .comment-info{
+        
+        padding: 30px;
+        margin: 0 100px 0 100px;
+     
     }
 }
 
 @media screen and (max-width: 560px) {
     .form-style{
   
-    margin: 50px 50px 20px 100px;
+    margin: 50px 50px 280px 100px;
 
    }
 
    .new-post-form{
     margin: 30px 80px 30px 80px;
+   } 
+   
+   .comment-info{
+        
+    padding: 30px;
+    margin: 0 40px 0 40px;
+ 
 }
 
 }

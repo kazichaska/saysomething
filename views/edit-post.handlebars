@@ -4,9 +4,6 @@
 <article>
   <a href="/dashboard"> &larr; Back to dashboard</a>
 
-
-
-
   <h2>
     Edit post
   </h2>
@@ -21,7 +18,7 @@
       <a href="/post/{{post.id}}">{{post.contents.length}} {{format_plural "comment" post.contents.length}}</a>
     </div>
     <button class="ui positive button" type="submit">Save post</button>
-    <button class="ui red button" type="button" class="delete-post-btn">Delete post</button>
+    <button class=" delete-post-btn ui red button" type="button" >Delete post</button>
   </form>
 </article>
 
@@ -30,15 +27,12 @@
     <textarea rows="4" id="comment-body" name="comment-body"></textarea>
   </div>
 
-
-
     <div>
         <button class="ui primary button" id="add-btn" type="submit">Add comment</button>
     </div>
 </form>
 
 {{> comments post.contents}}
-
 
 </div>
 
