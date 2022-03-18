@@ -1,306 +1,236 @@
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #f0f2f5a1;
+body {
+  background-color: #f0f2f5a1;
 }
-
 
 /* START navigation styling */
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2185D0;
-    padding: 20px;
-    font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2185d0;
+  padding: 20px;
+  font-size: 20px;
 }
-#header-title{
-    color: white;
-    font-weight: bold;
+#header-title {
+  color: white;
+  font-weight: bold;
 }
 
 #icon {
-    margin-left: 20px;
-    cursor: pointer;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
-nav a{
-    color: white;
-    margin-left: 10px;
+nav a {
+  color: white;
+  margin-left: 10px;
 }
 
-nav a:hover{
-    color: #2185D0; 
-    background-color: white;
-    border-radius: 3px;
-    padding: 2px;
+nav a:hover {
+  color: #2185d0;
+  background-color: white;
+  border-radius: 3px;
+  padding: 2px;
 }
 /* END navigation styling */
 
 /* START footer styling */
 footer {
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
 
-  
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;  
-    
-    border-top: 1px solid rgb(204, 204, 204);
-    display: flex;
-    justify-content: center;
-    padding: 5px 0 5px 0;
-    font-size: 110%;
-   
+  border-top: 1px solid rgb(204, 204, 204);
+  display: flex;
+  justify-content: center;
+  padding: 5px 0 5px 0;
+  font-size: 110%;
 }
 
 /* END footer styling */
 
-
 /* START form styling */
 .form-style {
-
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295), 0 8px 16px rgb(0 0 0 / 10%);
-    margin: 50px 360px 280px 360px;
-    padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.295), 0 8px 16px rgb(0 0 0 / 10%);
+  margin: 50px 360px 280px 360px;
+  padding: 20px;
 }
 
-.btn{
-    width: 100%;
+.btn {
+  width: 100%;
 }
 
-.link{
-    margin-top: 10px;
+.link {
+  margin-top: 10px;
 }
-
 
 /* END form styling */
 
-
-
 /* START dashboard handlebar styling */
 
-.new-post-form{
-    margin: 30px 250px 30px 250px;
+.new-post-form {
+  margin: 30px 250px 30px 250px;
 }
 
-#greeting-section{
-    margin: 10px 25px 0 25px;
+#greeting-section {
+  margin: 10px 25px 0 25px;
 }
 
-#post-section{
-    margin: 10px 50px 280px 50px;
-
-
+#post-section {
+  margin: 10px 50px 280px 50px;
 }
 
-.dashboard-form{
-    margin-top: 30px;
+.dashboard-form {
+  margin-top: 30px;
 }
-
-
 
 /* END dashboard styling */
 
-
 /* START edit post handlebar*/
 
-.comment-section{
-   
-    margin: 0 100px 280px 100px ;
+.comment-section {
+  margin: 0 100px 280px 100px;
 }
 
-.comment-form{
-    margin: 0 20px 10px 20px;
-
+.comment-form {
+  margin: 0 20px 10px 20px;
 }
 
-.comment-section-info{
-    margin-bottom: 380px;
-    
+.comment-section-info {
+  margin-bottom: 380px;
 }
 
-
-.dashboard-post-list ol li a{
- 
-  
-    margin: 0;
+.dashboard-post-list ol li a {
+  margin: 0;
 }
 /* END edit post handlebar*/
 
-
-
 /* START posts styling */
-section ol li{
-    margin: 10px 30px 10px 30px;
-   
+section ol li {
+  margin: 10px 30px 10px 30px;
 }
 
 /* END posts styling */
 
-
-
 /* START  home page styling */
 
-.post-list li{
-    
-    margin: 20px 20px 10px 70px;
+.post-list li {
+  margin: 20px 20px 10px 70px;
 }
 
-.post-list{
-    margin-bottom: 280px;
+.post-list {
+  margin-bottom: 280px;
 }
 
 /* END  home page styling */
 
-
 /* START  comment page styling */
 
 article h2 {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
-#post-info{
-    margin: 10px 0 10px 0;
+#post-info {
+  margin: 10px 0 10px 0;
 }
 
-.edit-post-form{
-    margin: 0 20px 10px 20px;
-
+.edit-post-form {
+  margin: 0 20px 10px 20px;
 }
 
-
-#comment-title{
-    padding: 10px;
-    border-radius: 5px;
-    width: 100%;
+#comment-title {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
 }
 
-#comment-body{
-    width: 100%;
-    resize: none;
+#comment-body {
+  width: 100%;
+  resize: none;
 }
 
-#add-btn{
-    margin-top: 10px;
+#add-btn {
+  margin-top: 10px;
 }
 
 /* END  comment page styling */
 
-
-
-
 /* START  single-post handlebar  styling */
 
-.comment-info-section{
-    /* border: 1px solid red; */
-    padding: 20px;
-    margin-bottom: 50px;
+.comment-info-section {
+  /* border: 1px solid red; */
+  padding: 20px;
+  margin-bottom: 50px;
 }
 
-.comment-info{
-    /* border: 1px solid green; */
-    padding: 30px;
-    margin: 0 200px 0 200px;
- 
- }
-
-.comment-form textarea{
-  
-    width: 100%;
-    resize: none;
-    margin-bottom: 10px;
-   
+.comment-info {
+  /* border: 1px solid green; */
+  padding: 30px;
+  margin: 0 200px 0 200px;
 }
 
-
-
-
+.comment-form textarea {
+  width: 100%;
+  resize: none;
+  margin-bottom: 10px;
+}
 
 /* END   single-post handlebar styling */
 
-
-
-
-
-
-
-
 /* START media queries styling */
 @media screen and (max-width: 992px) {
-    .form-style {
-
-      margin: 50px 200px 280px 200px;
-      
-    }
-
-    .new-post-form{
-        margin: 30px 180px 30px 180px;
-    }
-
-    .comment-info-section{
-
-    }
-
-    .comment-info{
-        
-        padding: 30px;
-        margin: 0 150px 0 150px;
-     
-    }
-
+  .form-style {
+    margin: 50px 200px 280px 200px;
   }
 
+  .new-post-form {
+    margin: 30px 180px 30px 180px;
+  }
+
+  .comment-info-section {
+  }
+
+  .comment-info {
+    padding: 30px;
+    margin: 0 150px 0 150px;
+  }
+}
 
 @media screen and (max-width: 786px) {
-    .form-style {
-    
-      margin: 50px 100px 280px 100px;
+  .form-style {
+    margin: 50px 100px 280px 100px;
+  }
+  .new-post-form {
+    margin: 30px 100px 30px 100px;
+  }
 
-    }
-    .new-post-form{
-        margin: 30px 100px 30px 100px;
-    }
-
-
-
-    .comment-info{
-        
-        padding: 30px;
-        margin: 0 100px 0 100px;
-     
-    }
+  .comment-info {
+    padding: 30px;
+    margin: 0 100px 0 100px;
+  }
 }
 
 @media screen and (max-width: 560px) {
-    .form-style{
-  
+  .form-style {
     margin: 50px 50px 280px 100px;
+  }
 
-   }
-
-   .new-post-form{
+  .new-post-form {
     margin: 30px 80px 30px 80px;
-   } 
-   
-   .comment-info{
-        
+  }
+
+  .comment-info {
     padding: 30px;
     margin: 0 40px 0 40px;
- 
-}
-
+  }
 }
 
 /* END media queries styling */
-
-
-
-
-
