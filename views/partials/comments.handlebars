@@ -1,29 +1,25 @@
 <div class="comment-section-info">
-    <div class="comments">
-  {{#each this}}
-    <section class="comment">
+  <div class="comments">
+    {{#each this}}
+      <section class="comment">
         <div class="ui section divider"></div>
-      <div class=" comment-username meta">
-        <h4>{{user.username}}  on
-        {{format_date created_at}}</h4> 
-      </div>
+        <div class="comment-username meta">
+          <h4>{{user.username}}
+            on
+            {{format_date created_at}}</h4>
+        </div>
 
-      <div class="text">
-        {{comment_text}}
-      </div>
+        <div class="text">
+          {{comment_text}}
+        </div>
 
+      </section>
 
-    </section>
+    {{/each}}
+  </div>
 
- 
-  {{/each}}
 </div>
 
-</div>
-
-
-
-
-{{!-- <h3 class="ui header">Section One</h3>
+{{! <h3 class="ui header">Section One</h3>
 <div class="ui section divider"></div>
-<h3 class="ui header">Section Two</h3> --}}
+<h3 class="ui header">Section Two</h3> }}
