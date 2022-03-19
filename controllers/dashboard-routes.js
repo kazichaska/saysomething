@@ -5,7 +5,7 @@ const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 const moment = require('moment');
 var today = moment().format("[Today is: ] dddd, MM/DD/YYYY");
-var cloudinary = require('cloudinary');
+var cloudinary = require('cloudinary').v2;
 
 
 function getGreeting(username) {
