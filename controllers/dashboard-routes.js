@@ -5,11 +5,61 @@ const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 const moment = require('moment');
 var today = moment().format("[Today is: ] dddd, MM/DD/YYYY");
+var cloudinary = require('cloudinary');
+
 
 function getGreeting(username) {
     const hour = new Date().getHours();
     return greet(username, hour);
 }
+
+function showUploadWidget() {
+    cloudinary.openUploadWidget({
+       cloudName: "saysomething",
+       uploadPreset: "saysomething",
+       sources: [
+           "local",
+           "url",
+           "image_search",
+           "google_drive",
+           "facebook",
+           "instagram",
+           "camera"
+       ],
+       googleApiKey: "<image_search_google_api_key>",
+       showAdvancedOptions: true,
+       cropping: true,
+       multiple: false,
+       defaultSource: "local",
+       styles: {
+           palette: {
+               window: "#FFFFFF",
+               windowBorder: "#2D62A0",
+               tabIcon: "#0078FF",
+               menuIcons: "#5A616A",
+               textDark: "#000000",
+               textLight: "#FFFFFF",
+               link: "#0078FF",
+               action: "#FF620C",
+               inactiveTabIcon: "#0E2F5A",
+               error: "#F44235",
+               inProgress: "#0078FF",
+               complete: "#20B832",
+               sourceBg: "#E4EBF1"
+           },
+           fonts: {
+               default: {
+                   active: true
+               }
+           }
+       }
+   },
+    (err, info) => {
+      if (!err) {    
+        console.log("Upload Widget event - ", info);
+      }
+     });
+    }
 
 router.get('/', withAuth, (req, res) => {
     Post.findAll({
