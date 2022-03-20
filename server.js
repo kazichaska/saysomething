@@ -1,9 +1,18 @@
 const path = require('path');
 const express = require('express');
 const routes = require('./controllers');
+require('dotenv').config()
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+
+// Cloudinary configuration
+const cloudinary = require('cloudinary').v2;
+cloudinary.config({
+  cloud_name: process.env.CLOUD_NAME,
+  api_key: process.env.API_KEY,
+  api_secret: process.env.API_SECRET
+});
 
 const sequelize = require('./config/connection');
 const exphbs = require('express-handlebars');

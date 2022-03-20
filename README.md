@@ -23,11 +23,11 @@ An app for folks with stuff to say
 
 ## Technologies used on this project
 
-`bcrypt connect-seesion-sequelize dotenv express express-handlebars express-session greet-by-time moment mysql2 sequelize and Semantic-UI, greet-by-time uses displays new message everytime user logs in, Moment.js to show day/date etc`
+`bcrypt cloudinary connect-seesion-sequelize dotenv express express-handlebars express-session greet-by-time moment mysql2 sequelize and Semantic-UI, greet-by-time uses displays new message everytime user logs in, Moment.js to show day/date etc`
 
 ## Installation
 
-Run `npm i bcrypt connect-seesion-sequelize dotenv express express-handlebars express-session greet-by-time moment mysql2 sequelize`
+Run `npm i bcrypt cloudinary connect-seesion-sequelize dotenv express express-handlebars express-session greet-by-time moment mysql2 sequelize`
 
 ## Usage
 
